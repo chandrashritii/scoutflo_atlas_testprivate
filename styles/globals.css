@@ -1,0 +1,81 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  font-size: '14px';
+  font-family: 'DM Sans';
+}
+
+
+h3 {
+  font-size: '14px';
+  font-family: 'Outfit';
+}
+
+p {
+  font-family: 'DM Sans';
+  font-size: '14px';
+}
+  
+
+h1, h2, h3 {
+  font-family: 'Outfit';
+  font-size: '14px';
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  height: auto;
+  font-family: 'DM Sans';
+}
+
+.ant-radio-button-wrapper {
+  height: 40px !important;
+  padding: 5px 15px !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 8px !important;
+  width: 133px !important;
+  text-align: center !important;
+  background: #f4f4f4 0% 0% no-repeat padding-box !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  background: #334bd0 0% 0% no-repeat padding-box !important;
+  color: white !important;
+}
+
+.ant-switch-checked {
+  background: #334bd0 0% 0% no-repeat padding-box !important;
+}
+
+.ant-menu-item-selected {
+  color: #1f3180 !important;
+}
+
+.ant-menu-item-selected :after {
+  border-bottom: 2px solid #1f3180 !important;
+}
+
+.css-xetjfm-MuiDivider-root {
+  border-color: black !important;
+}
+
+.ant-divider {
+  border-top: 2px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
