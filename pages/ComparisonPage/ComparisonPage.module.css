@@ -1,0 +1,53 @@
+
+.topbox {
+    display: 'flex';
+    flex-wrap: 'wrap';
+    background: 'yellow';
+} 
+
+
+.cardMain {
+    margin-top: 33px;
+    background: #FAFBFF 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    height: 'auto';
+}
+
+.container {
+    padding: 5px 72px 48px 72px;
+    background-color: '#FAFBFF';
+    height: 100%;
+    font-family: "DMSans";
+}
+
+
+.ant-image-preview-operations-operation:not(:first-child) {
+    display: none;
+}
+
+
+.imageVectorLogo {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+    margin: '10px';
+}
+
+
+.topgrid {
+    height: 'auto'; 
+    width: '97%'; 
+    background-color: "#fff";
+    margin: "12px";
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+}
+
+.wrapIcon {
+    vertical-align: 'middle';
+    display: 'inline-flex';
+    color: '#000';
+    font-size: "20px"; 
+    text-transform: 'capitalize'; 
+   }

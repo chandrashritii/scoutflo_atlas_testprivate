@@ -189,6 +189,7 @@ function Home() {
                           className={styles.imageProduct}
                           height={200}
                           src="https://marketplace-screenshots.githubusercontent.com/7/0eb65a80-2d65-11ea-88e2-c1804c9f365b?auto=webp&format=jpeg&width=670"
+                          alt=""
                         />
                       </div>
                     </SplideSlide>
@@ -198,6 +199,7 @@ function Home() {
                           className={styles.imageProduct}
                           height={200}
                           src="https://circleci.com/docs/assets/img/docs/arch.png"
+                          alt=""
                         />
                       </div>
                     </SplideSlide>
@@ -267,19 +269,6 @@ function Home() {
         {current === '2' && <div style={{ padding: '20px' }}><Technology /></div>}
         {current === '3' && <div style={{ padding: '20px' }}><Community /> </div>}
         {current === '4' && <div style={{ padding: '20px' }}><Pricing /></div>}
-
-
-
-
-        {/* <TabPanel value="4">
-          <Pricing />
-        </TabPanel>
-        <TabPanel value="3">
-          <Community />
-        </TabPanel>
-        <TabPanel value="2">
-          <Technology />
-        </TabPanel> */}
 
       </div>
     </div>

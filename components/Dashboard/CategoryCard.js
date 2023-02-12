@@ -3,8 +3,7 @@ import { Button, Grid, Paper, Box, Stack, TextField, Autocomplete, Divider, List
 import { Image } from "antd";
 import styles from '../../pages/Dashboard/Dashboard.module.css';
 import theme from '../../styles/atlas_theme';
-import { styled } from '@mui/material/styles';
-import SelectorButton from "../../common/SelectorButton"
+import SelectorButton from "../../common/Buttons/SelectorButton"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import StarIcon from '@mui/icons-material/Star';
@@ -12,10 +11,11 @@ import CallSplitIcon from '@mui/icons-material/CallSplit';
 import DescriptionIcon from '@mui/icons-material/Description';
 import GroupIcon from '@mui/icons-material/Group';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import CropSquareIcon from '@mui/icons-material/CropSquare';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import RectangleIcon from '@mui/icons-material/Rectangle';
-import Item from '../../components/Dashboard/GridItem';
+import Item from '../../common/GridItem';
+import ComparisonDrawer from '../../components/Comparisons/ComparisonDrawer';
+
 
 const CategoryCard = () => {
     const [show, setShow] = useState(false);
@@ -32,6 +32,7 @@ const CategoryCard = () => {
                             height={80}
                             src="https://avatars.githubusercontent.com/u/1231870?s=200&v=4"
                             style={{ padding: '8px' }}
+                            alt=""
                         />
 
                     </Paper>
@@ -70,15 +71,16 @@ const CategoryCard = () => {
                                 </p>
                             </Paper>
                         </Item>
-                        <Item elevation={0} sx={{ 
-                            width: '100%', 
+                        <Item elevation={0} sx={{
+                            width: '100%',
                             // backgroundColor: "yellow", 
-                            m: 0, 
-                            p: 2 }}>
-                            <Paper elevation={0} spacing={4} sx={{ 
-                                width: '50%', 
+                            m: 0,
+                            p: 2
+                        }}>
+                            <Paper elevation={0} spacing={4} sx={{
+                                width: '50%',
                                 // backgroundColor: "green" 
-                                }}>
+                            }}>
                                 <Stack>
                                     <Item elevation={0}>
                                         <Paper elevation={0} className={styles.paper} sx={{ p: 1, textAlign: "left", width: '100%' }}>
@@ -116,11 +118,11 @@ const CategoryCard = () => {
                             </Paper>
 
 
-                            <Paper elevation={0} spacing={4} sx={{ 
-                                mb: 5, 
-                                width: '50%', 
+                            <Paper elevation={0} spacing={4} sx={{
+                                mb: 5,
+                                width: '50%',
                                 // backgroundColor: "blue" 
-                                }}>
+                            }}>
                                 <Stack elevation={0}>
                                     <Item elevation={0}>
                                         <Paper elevation={0} className={styles.paper} sx={{ p: 1, textAlign: "left", width: '100%' }}>
@@ -178,9 +180,9 @@ const CategoryCard = () => {
                         </Paper>
                         <Paper elevation={0} className={styles.paper} sx={{ ml: 0.75 }}>
                             <Button sx={{
-                                background: '#000003',
+                                background: '#1F3180',
                                 color: '#fff',
-                                fontSize: '11px',
+                                fontSize: '12px',
                                 '&:hover': {
                                     border: '2px solid #000003',
                                     color: '#000'
@@ -189,11 +191,8 @@ const CategoryCard = () => {
                                 Save
                             </Button>
                         </Paper>
-                        <Paper elevation={0} className={styles.paper} sx={{ ml: 1.25}}>
-                            <Button sx={{border: '2px solid #000003', fontSize: '11px'}}> 
-                            <CropSquareIcon style={{ fontSize: '20px', color: '#000003' }} /> 
-                            Compare 
-                            </Button>
+                        <Paper elevation={0} className={styles.paper} sx={{ ml: 1.25 }}>
+                                <ComparisonDrawer> Compare </ ComparisonDrawer>
                         </Paper>
                     </Item>
                 </div>

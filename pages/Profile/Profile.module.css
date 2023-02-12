@@ -1,0 +1,30 @@
+.cardMain {
+    margin-top: 33px;
+    background: #FAFBFF 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    height: 'auto';
+}
+
+.container {
+    padding: 5px 72px 48px 72px;
+    background-color: '#FAFBFF';
+    height: 100%;
+    font-family: "DMSans";
+}
+
+
+.paper {
+    padding: spacing(2);
+    text-align: 'left';
+    color: '#fff';
+    width: '100%';
+    justify-content: 'left';
+}
+
+.rectangle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #E8E8E8;
+    border-radius: 8px;
+    background-color: #fff;
+}

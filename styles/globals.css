@@ -33,6 +33,7 @@ a {
   box-sizing: border-box;
   height: auto;
   font-family: 'DM Sans';
+  background-color: '#000';
 }
 
 .ant-radio-button-wrapper {
@@ -76,6 +77,89 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #FAFBFF;
   }
+}
+
+
+
+.multicolor-bar {
+	margin: 20px 20%;
+}
+
+.multicolor-bar .values .value {
+	float: left;
+	text-align: center;
+}
+
+.multicolor-bar .scale .graduation {
+	float: left;
+	text-align: center;
+}
+
+.multicolor-bar .bars .bar {
+	float: left;
+	height: 10px;
+}
+
+.multicolor-bar .bars div.bar:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.multicolor-bar .bars div.bar:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.multicolor-bar .legends {
+	text-align: center;
+}
+
+
+.multicolor-bar .legends .legend {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.multicolor-bar .legends .legend .dot {
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.multicolor-bar .legends .legend .label {
+	margin-left: 2px;
+	vertical-align: middle;
+}
+
+/*Buttons*/
+
+
+.buttonfilled {
+  background: '#F78500';
+  border-radius: "8px";
+  width: '90%';
+  background: '#F78500';
+  color: '#fff';
+  font-size: '14px';
+  font-family: 'Outfit';
+  text-transform: 'none';
+  border-radius: "8px";
+  padding: '11px 20px 11px 20px';
+}
+
+.buttonfilled :hover {
+      outline: '2px solid #000003';
+      color: '#000';
+}
+
+.buttonoutlined {
+  border: '2px solid #000003';
+  font-size: '14px';
+  font-family: 'Outfit';
+  padding: '8px 19px 8px 19px';
+  text-transform: 'none';
+  border-radius: "8px";
+  color: '#000';
 }
